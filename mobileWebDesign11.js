@@ -1,7 +1,7 @@
 
 /* Redirect */
  if ( screen.width < 480 ){
-   location.href = "index.html";
+   setTimeout("location.href = 'index.html';", 2000);
  }
 
 

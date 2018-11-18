@@ -1,9 +1,11 @@
 /* 6. Change width and height from flat values to percentages. */
 document.head.appendChild(document.createElement("style"));
-sheet.insertRule("body { width:100px; height: 200px;", 0);
+document.styleSheets[0].insertRule("body { width:100px; height: 200px; border-style: solid;", 0);
+document.body.appendChild(document.createTextNode("content"));
 function scaling(){
-     document.styleSheets[0].insertRule("body { width:100%; height: 100%", document.styleSheets[0].rules.length);
+     document.styleSheets[0].insertRule("body { width:95%; height: 95%", document.styleSheets[0].rules.length);
 }
+setTimeout(scaling,2000);
 
 /* 7. Go into the styleSheets of a document. I create a CSS stylesheet, and make new rules on the fly.
 document.head.appendChild(document.createElement("style"));
