@@ -1,52 +1,6 @@
-/* 1. Detect and identify a mobile device. */
-document.write(navigator.userAgent.search("iphone"));
-document.write("<br>");
-document.write(navigator.userAgent.search("Android"));
-document.write("<br>");
-
-
-/* 2. Here the document will display width, innerWidth, innerHeight, and orientation.
-document.write(screen.width.toString());
-document.write("<br>");
-document.write(window.innerWidth.toString());
-document.write("<br>");
-document.write(window.innerHeight.toString());
-document.write("<br>");
-document.write(window.orientation);
-document.write("<br>");
-*/
-
-/* 3. Notice changes in phone orientation.
-window.addEventListener("orientationchange", function(){ alert("web page orientation change.") });
-window.addEventListener("resize", function(){ alert("web page resize.") }, true);
-*/
-
-/* 4. Detect touch motion on the browser.
-function movement(event){
-    document.body.insertAdjacentHTML("beforeend", event.toString() + " X= " + event.pageX.toString());
-    document.body.insertAdjacentHTML("beforeend", " Y= " + event.pageY.toString() + "<br>");
-    console.log(event.toString() + " X= " + event.pageX.toString());
-    console.log(" Y= " + event.pageY.toString());
-}
-document.addEventListener("touchmove", movement);
-document.addEventListener("mousemove",movement);
-*/
-
-/* 5. Touch activates a link. I see if click might also.
-var anchor = document.createElement("A");
-anchor.setAttribute("href", "javascript:void(0);");
-anchor.setAttribute("id", "myLink");
-anchor.appendChild(document.createTextNode("Click here to activate the link"));
-document.write("<br>");
-anchor.addEventListener("touchend", function(){ alert("Touched the link.") });
-anchor.addEventListener("click", function(){ alert("Clicked the link.") });
-document.body.appendChild(anchor);
-document.write("<br>");
-*/
-
 /* Sliding event
 
-Here I will show a quick swiping event
+Here I will show a quick swiping event */
 document.addEventListener('touchstart', beginSwipe, false);
 document.addEventListener('touchmove', swipe, false);
 var xDown;
@@ -80,7 +34,6 @@ function swipe(event) {
 xDown = null;
 yDown = null;
 };
- */
 
 /* mobile menu
     var menu = document.createElement("button");

@@ -1,11 +1,4 @@
-/* 1. Detect and identify a mobile device. */
-document.write(navigator.userAgent.search("iphone"));
-document.write("<br>");
-document.write(navigator.userAgent.search("Android"));
-document.write("<br>");
-
-
-/* 2. Here the document will display width, innerWidth, innerHeight, and orientation.
+/* 2. Here the document will display width, innerWidth, innerHeight, and orientation. */
 document.write(screen.width.toString());
 document.write("<br>");
 document.write(window.innerWidth.toString());
@@ -14,7 +7,7 @@ document.write(window.innerHeight.toString());
 document.write("<br>");
 document.write(window.orientation);
 document.write("<br>");
-*/
+
 
 /* 3. Notice changes in phone orientation.
 window.addEventListener("orientationchange", function(){ alert("web page orientation change.") });
