@@ -5,6 +5,7 @@ function movement(event){
     console.log(event.toString() + " X= " + event.pageX.toString());
     console.log(" Y= " + event.pageY.toString());
 }
+document.addEventListener("touchstart", movement);
 document.addEventListener("touchmove", movement);
 document.addEventListener("mousemove",movement);
 
