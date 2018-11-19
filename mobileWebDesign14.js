@@ -1,4 +1,3 @@
-
 /* 11. Horizontal Scrolling */
 var bar = document.createElement("div");
     bar.setAttribute("class", "bar");
